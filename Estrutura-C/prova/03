@@ -1,0 +1,32 @@
+# include <stdio.h>
+# include <stdlib.h>
+int main(void){ 
+int numero1, numero2;
+
+printf("Informe o 1ª numero:");
+scanf("%d", &numero1);
+printf("Informe o 2ª numero:");
+scanf("%d", &numero2);
+
+if(numero1>numero2){
+printf("\nO maior numero é %d", numero1);
+  if(numero1%2 == 0){
+  printf("\nO numero %d é par", numero1);
+  }else{
+  printf("\nO numero %d é impar", numero1);
+}
+ 
+}else{
+printf("\nO maior numero é %d", numero2);
+  if(numero2%2 == 0){
+  printf("\nO numero %d é par", numero2);
+  }else{
+  printf("\nO numero %d é impar", numero2);
+}
+}
+
+
+  
+
+return 0;
+}

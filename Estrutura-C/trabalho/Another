@@ -1,0 +1,59 @@
+Segurança Cibernética
+Alunos: Lucas Emanuel/Josielson Ferreira
+
+Documentação:
+
+1ªTemplate Injection(T1221):
+
+Usado para criar ou modificar referências em modelos de documento do usuário para ocultar códigos maliciosos ou forçar tentativas de autenticação. Como exemplo o Office Open XML (OOXML) da Microsoft define um formato baseado em XML para documentos do Office (.docx, xlsx, .pptx) para substituir formatos binários mais antigos (.doc, .xls, .ppt). Os arquivos OOXML são compactados em arquivos ZIP compostos de vários arquivos XML, chamados de partes, contendo propriedades que definem coletivamente como um documento é renderizado.
+
+Esse modelo é ultilizado para ocultar inicialmente o código malicioso a ser executado por meio de documentos do usuário. As referências de modelo injetadas em um documento podem permitir que cargas maliciosas sejam buscadas e executadas quando o documento é carregado.Esses documentos podem ser entregues por meio de outras técnicas, como phishing e/ou Taint Shared Content.
+
+Mitigações:
+
+Antivírus/Antimalware(M1049):
+Sistemas de prevenção de intrusão de rede/host, antivírus e câmaras de detonação podem ser empregados para impedir que certos documentos sejam obtidos e/ou executados cargas maliciosas.
+
+Desativar ou remover recurso ou programa(M1042):
+Pode se considerar desabilitar macros/conteúdo ativo do Microsoft Office para evitar a execução de cargas maliciosas em documentos, embora essa configuração possa não atenuar o uso de autenticação forçada para essa técnica.
+
+Prevenção de Intrusão de Rede(M1031):
+Os Sistemas de prevenção de intrusão de rede/host, antivírus e câmaras de detonação podem ser empregados para impedir que documentos sejam obtidos e/ou executados cargas maliciosas.[7]
+
+Treinamento do Usuário(M1017):
+
+Atraves do treino de usuários?funcionarios. para que possam identificar técnicas de engenharia social e e-mails de spearphishing que podem ser usados para entregar documentos maliciosos.
+
+
+
+2ªPhishing(T1566):
+
+Pode Ultilizarse do enviao mensagens de phishing para obter acesso aos sistemas das vítimas. Sendo que Todas as formas de phishing são realizadas atravez de engenharia social transmitida eletronicamente.
+Os adversários podem enviar e-mails às vítimas contendo anexos ou links maliciosos, normalmente para executar códigos maliciosos nos sistemas das vítimas.  O phishing também pode ser realizado por meio de serviços de terceiros, como plataformas de mídia social.  O phishing também pode envolver técnicas de engenharia social, como se passar por uma fonte confiável, bem como técnicas evasivas, como remover ou manipular e-mails ou metadados/cabeçalhos de contas comprometidas sendo abusadas para enviar mensagens (por exemplo,atraves regras de ocultação de e-mail).  Outra maneira de conseguir isso é forjar ou falsificar a identidade do remetente, que pode ser usada para enganar tanto o destinatário humano quanto as ferramentas de segurança automatizadas.
+
+Mitigações:
+
+Antivírus/Antimalware(M1049):
+O antivírus pode colocar arquivos suspeitos em quarentena automaticamente.
+
+Prevenção de Intrusão de Rede(M1031):
+Os Sistemas de prevenção de intrusão de rede e sistemas projetados para verificar e remover anexos ou links de e-mail maliciosos podem ser usados para bloquear atividades.
+
+Restringir conteúdo baseado na web(M1021):
+Atravez disso pode se Determinar se determinados sites ou tipos de anexos (por exemplo: .scr, .exe, .pif, .cpl, etc.) que podem ser usados para phishing são necessários para as operações comerciais, podendo bloquear o acesso se a atividade caso não possa ser bem monitorada ou caso represente um risco significativo.
+
+
+3ªExfiltration Over Web Service(T1567):
+
+Usa de um serviço da Web externo legítimo existente para exfiltrar dados em vez de seu canal principal de comando e controle.  Os serviços da Web populares que atuam como um mecanismo de exfiltração podem fornecer uma quantidade significativa de cobertura devido à probabilidade de que os hosts dentro de uma rede já estejam se comunicando com eles antes do comprometimento.  As regras de firewall também podem já existir para permitir o tráfego para esses serviços.Os provedores de serviços da Web também costumam usar criptografia SSL/TLS, oferecendo aos adversários um nível adicional de proteção.
+
+
+Mitigações:
+
+Data Loss Prevention(M1057):
+Data loss prevention pode detectar e bloquear o upload de dados confidenciais para serviços da Web por meio de navegadores da Web.
+
+Restrict Web-Based Content(M1021):	
+Os proxies da Web podem ser usados para impor uma política de comunicação de rede externa que impeça o uso de serviços externos não autorizados.
+
+

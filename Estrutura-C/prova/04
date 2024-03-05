@@ -1,0 +1,27 @@
+# include <stdio.h>
+# include <stdlib.h>
+int main(void){ 
+int maior=0, menor=0, aux=0, con= 0,loop = 1;
+do{
+                      printf("Digite a idade da %dª pessoa: ", loop);
+                      scanf("%d", &aux);
+  if (con==0){ 
+                        maior=aux;
+                        menor=aux;
+                        con++;
+  }else if(aux>maior){ 
+                        maior = aux;
+  }else if(aux<menor){
+                        menor = aux;
+  }
+if(loop<3){
+                        loop++; 
+}else{
+                        break;   
+}
+}while(1);
+
+                        printf("\nA pessoa mais velha tem %d anos\n", maior);
+                        printf("A pessoa mais nova tem %d anos", menor);
+return 0;
+}

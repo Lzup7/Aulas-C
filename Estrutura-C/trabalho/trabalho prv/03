@@ -1,0 +1,13 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+  int altura, base;
+  printf("Digite qual a altura do triangulo: ");
+  scanf("%d", &altura);
+  printf("\nDigite qual a base do triangulo: ");
+  scanf("%d", &base);
+  int area = (altura*base)/2;
+  printf("\nA area do triangulo é %d", area);
+  return 0;
+}

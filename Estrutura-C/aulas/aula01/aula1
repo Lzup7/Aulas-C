@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h> // arquivo de cabeçalho para trabalhar com strings
+
+int main() {
+  int a;     // declara a variável "a"
+  a = 3 + 5; // soma 3 com 5
+  printf("Valor da Variável: %d\n", a);
+
+  int Andares;
+  float AlturaAndar;
+
+  // Andares de um predio e altura entre andares para
+  // encontrar o tamanho do predio em altura
+  Andares = a;
+  AlturaAndar = 2.7;
+
+  printf("Altura Total do Prédio: %f metros\n", Andares * AlturaAndar);
+  // No momento da execução sinal %f vai ser substituído
+  // pelo valor da multiplicação
+
+  float NotaDaP1, NotaDaP2;
+  float Media;
+
+  NotaDaP1 = 6.6; // Atribuição do Valores das médias
+  NotaDaP2 = 8.2;
+
+  Media = (NotaDaP1 + NotaDaP2) / 2.0;
+
+  printf("Média Final : %6.3f\n", Media);
+  // No momento da execução sinal %6.3f vai ser substituído
+  // pelo valor da variável Media
+  // Média Final :  7.400
+
+  char Nome[50]; // declara uma string que poderá armazenar até 30 caracteres !!
+  strcpy(Nome, "Jose da Silva"); // atribui "Jose da Silva" para a variável Nome
+  strcat(Nome, " Santos");
+  printf("O funcionário %s foi tranferido\n",
+         Nome); // no lugar de %s aparecerá o
+                // conteúdo da variável Nome
+}

@@ -1,0 +1,22 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+  int calculo = 0;
+  int numero;
+  printf("Digite qual tabuada deseja fazer: ");
+  scanf("%d", &numero);
+do{
+calculo++;
+int result = calculo*numero;
+printf("%d X %d = %d\n", numero, calculo, result);
+
+if(calculo==10){
+  break;
+}
+  
+}while(1);
+
+
+  return 0;
+}

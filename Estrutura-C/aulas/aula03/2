@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+  int qtd_alunos, qtd_alunas;
+  char nome[50], sexo[1];
+
+  printf("Digite a quantidade de alunos :");
+  scanf("%d", &qtd_alunos);
+  printf("Digite a quantidade de alunas :");
+  scanf("%d", &qtd_alunas);
+
+  printf("O numero de alunos é %d", qtd_alunos);
+  printf("\nO numero de alunas é %d", qtd_alunas);
+
+  printf("\nDigite um nome :");
+  scanf("%s", nome);
+  
+  printf("Digite o sexo :");
+  scanf("%s", sexo);
+
+  return 0;
+}

@@ -1,0 +1,21 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <stdbool.h>
+int main(void){ 
+int idade = 32;
+bool test;
+
+  if(idade >= 32 && idade > 0){
+      test = true;    
+  }else{
+      test = false;
+  }
+
+if(test){
+  printf("Ta fikando velho ein");
+}else{
+  printf("Mt Nutella");
+}
+  
+return 0;
+}

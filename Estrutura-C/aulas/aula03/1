@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+  int qtd_alunos, qtd_alunas;
+
+  printf("Digite a quantidade de alunos :");
+  scanf("%d", &qtd_alunos);
+  printf("Digite a quantidade de alunas :");
+  scanf("%d", &qtd_alunas);
+
+  printf("O numero de alunos é %d", qtd_alunos);
+  printf("O numero de alunas é %d", qtd_alunas);
+
+  return 0;
+}

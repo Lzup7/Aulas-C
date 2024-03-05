@@ -1,0 +1,20 @@
+# include <stdio.h>
+# include <stdlib.h>
+# include <stdbool.h>
+int main(void){ 
+
+
+int lista[5] = {3,5,6,7,8};
+int soma = 0;
+for(int index = 0; index < 5; index++){
+ printf("Valor da possição %d na lista é %d\n", index + 1 , lista[index]);
+  soma+= lista[index];
+  
+}
+printf("Valor da soma da lista é %d\n", soma);
+
+
+
+  
+return 0;
+}

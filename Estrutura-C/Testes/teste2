@@ -1,0 +1,20 @@
+//#include <stdio.h>
+#include <string.h>
+#include <iostream>
+
+int main(){
+
+int a, b;
+  scanf("Digite o primeiro valor %d", &a);
+  scanf("Digite o segundo valor %d", &b);
+  double media;
+  media = (a + b) / 2.0;
+  printf("A media de d% e d% é f%\n", a. b, media);
+
+
+
+
+
+
+  
+}

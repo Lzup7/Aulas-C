@@ -1,0 +1,14 @@
+# include <stdio.h>
+# include <stdlib.h>
+int main(void){ 
+int numero1, numero2;
+
+printf("Informe o numero de alunos:");
+scanf("%d", &numero1);
+printf("Informe o numero de alunas:");
+scanf("%d", &numero2);
+printf("\nPossui %d alunos\n", numero1);
+printf("\nPossui %d alunas", numero2);
+
+return 0;
+}

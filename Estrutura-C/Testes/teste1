@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+// %d valor inteiro
+// cha valor string
+int main() {
+
+int lampada = 1 ;
+  printf("Desligar interruptor\n");
+  int escada = 1;
+  printf("Pegar a %d escada e %d lampada\n", escada, lampada);
+  char instrucao[50];
+  strcpy(instrucao, "Posicionar escada\n");
+  printf("%s", instrucao);
+}

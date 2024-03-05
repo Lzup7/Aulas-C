@@ -1,0 +1,25 @@
+# include <stdio.h>
+# include <stdlib.h>
+
+int main(void){
+int lista1[8] = {1,3,4,5,7,2,4,8};
+int lista2[8] = {1,2,5,9,0,6,7,3};
+int cont = 1;
+int stay = 0;
+                    printf("Os numeros repetidos são:\n");
+do{
+if (cont>8){
+                     stay++;
+                     cont = 0;  
+}else if
+(lista1[cont] == lista2[stay]){
+    
+                    printf("%d\n", lista1[cont]); 
+}
+if(stay == 8){
+                    break;
+}
+                    cont++;
+}while(1);
+return 0;
+}

@@ -1,0 +1,77 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void) {
+  int a, b;
+  printf("Digite o primeiro valor : ");
+  scanf("Digite o primeiro valor %d", &a);
+  scanf("Digite o segundo valor  %d", &b);
+  double media;
+  media = (a + b) / 2.0;
+  printf("A média de %d e %d é %f\n", a, b, media);
+  
+  int A, B, Soma;
+  
+  printf("Digite um numero inteiro: ");
+  scanf("%d", &A);
+  
+  printf("Digite um numero inteiro: ");
+  scanf("%d", &B);
+  
+  Soma = A + B;
+  printf("O Valor da soma = %d", Soma);
+  if (Soma > 10) {
+    printf("O valor da soma eh maior que 10\n");
+  }
+  int value;
+  printf("Digite um numero inteiro: ");
+  scanf("%d", &value);
+  int sign;
+  if (value < 5)
+    sign = -1;
+  else if (value == 0)
+    sign = 0;
+  else
+    sign = 1;
+  switch (sign) {
+  case -1:
+    printf("Login invalido!");
+    break;
+  case 0:
+    printf("Login não permitido!");
+    break;
+  case 1:
+    printf("Login realizado com sucesso!");
+    break;
+  default:
+    printf("parametros de login invalidos!");
+  }
+  int soma = 0;
+  for (int i = 1; i < 10; ++i)
+    soma += i;
+  int n = 10 - 1;
+  printf("média = %.2f\n", (double)soma / n);
+  float nota1, nota2, media2;
+  int i;
+  printf("---- Calculando a media para 10 alunos -----\n\n");
+  // Entrada de dados
+  for (i = 1; i <= 10; i++) {
+    printf("Digite a primeira nota do aluno %d\n", i);
+    scanf("%f", &nota1);
+    printf("Digite a segunda nota do aluno %d\n", i);
+    scanf("%f", &nota2);
+    // Processamento
+    media2 = (nota1 + nota2) / 2;
+    // Saída
+    printf("\nMedia do aluno %d = %.1f\n", i, media2);
+    printf("------------------------------------------\n\n");
+  }
+  int contador = 1; // declarando e inicializando a variável de controle
+  while (contador <= 10) // Testando a condição
+  {
+    printf("%d ", contador); // Executando um comando dentro do laço
+    contador++; // atualizando a variável de controle
+  }
+  return EXIT_SUCCESS;
+}

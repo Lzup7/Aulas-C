@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  int lista[5], valor, tela;
+  for (valor=0;valor<5;valor++){
+    printf("digite um valor: ");
+    scanf("%d", &tela);
+    lista[valor] = tela;
+  }
+   for (valor=0;valor<5;valor++){
+    printf("valor array possição %d é %d\n", valor, lista[valor]);
+   
+  }
+  
+
+ return 0;
+}
